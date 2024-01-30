@@ -2,6 +2,7 @@ import Hero from '../components/Hero';
 import Middle from '../components/Middle';
 import Reviews from '../components/Reviews';
 import Banner from '@/components/Banner';
+import Map from '@/components/Map';
 export default function Home() {
   return (
   <>

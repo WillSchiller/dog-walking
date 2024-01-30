@@ -34,7 +34,8 @@ export default function Banner() {
         </p>
         <a
           href="#"
-          className="flex-none rounded-full bg-rose-300 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          className="flex-none rounded-full bg-rose-300 px-3.5 py-1 text-sm 
+          font-semibold text-white shadow-sm hover:bg-rose-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-400"
         >
           Learn more <span aria-hidden="true">&rarr;</span>
         </a>
