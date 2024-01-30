@@ -2,6 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Image from 'next/image'
+
+
 
 const renderStarRating = (rating: number) => {
   let stars = '';
@@ -129,13 +132,25 @@ const Reviews: React.FC<GoogleReviewProps> = ({ placeId, apiKey }) => {
    
     <div className="overflow-hidden bg-white sm:py-10 text-slate-800 ">
        
-      <div className="mx-auto max-w-4xl px-6 lg:px-8">
+      <div className="mx-auto max-w-2xl px-6 lg:px-8">
     <div>
     {reviews.map((review, index) => (
       <div className='rounded-xl' key={index} style={{ border: '1px solid #ddd', padding: '15px', margin: '15px 0' }}>
+        
+      
+        <Image
+            src={review.profile_photo_url}
+            alt="Product screenshot"
+            className="rounded-full mx-auto"
+            width={50}
+            height={50}
+          />
         <h4>{review.author_name}</h4>
-        <div style={{ color: '#FFD700' }}>{renderStarRating(review.rating)}</div>
+       
+   
+        <div className='text-4xl' style={{ color: '#FFD700' }}>{renderStarRating(review.rating)}</div>
         <p>{review.text}</p>
+        <p className='text-slate-500'>{review.relative_time_description}</p>
       </div>
     ))}
   </div>
