@@ -26,13 +26,7 @@ export default function Hero() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
        <div className="mx-auto max-w-2xl">
           <div className="hidden sm:py-10 sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Did you know we also do cat visits?{' '}
-              <a href="#" className="font-semibold text-rose-300">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
+         
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl">
